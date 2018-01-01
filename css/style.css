@@ -1,10 +1,24 @@
+html{
+    width: 100%;
+    height: 100%;
+}
 body{
-    width: 260px;
-    height: 470px;
+    position: relative;
+    width: 100%;
+    height: 100%;
     font-size: 14px;
     color: #747a81;
     background: #22282e;
     overflow: hidden;
+}
+
+.wrap{
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    display: inline-block;
+    width: 100%;
+    height: 470px;
 }
 
 .screenArea{
@@ -42,14 +56,12 @@ body{
     cursor: pointer;
 }
 
-.screenArea button[name = 'functions']{
-    font-weight: bold;
-    color: #fa683f;
+.screenArea button[name = 'unit']{
     background: none;
     border: none;
 }
 
-.screenArea button[name = 'functions']:focus, .screenArea button[name = 'delete']:focus{
+.screenArea button[name = 'delete']:focus, .screenArea button[name = 'unit']:focus{
     border: none;
     outline: none;
 }
@@ -58,17 +70,6 @@ body{
     float: right;
     background: none;
     border: none;
-}
-
-.screenArea button[name = 'delete'] svg{
-    zoom: 0.3;
-}
-
-.screenArea button[name = 'delete'] svg *{
-    fill: none;
-    stroke: #fa683f;
-    stroke-width: 6px;
-    stroke-linecap: "round";
 }
 
 .buttonArea::after, .screenArea::after{
@@ -110,4 +111,41 @@ body{
 
 button[name='zero'], button[name='one'], button[name='two'], button[name='three'], button[name='four'], button[name='five'], button[name='six'], button[name='seven'], button[name='eight'], button[name='nine'], button[name='dot'], button[name='plus_minus']{
     background: #1a1a20;
+}
+
+/*under layer popup*/
+.unit{
+    display: none;
+}
+
+/*icon*/
+.length-icon{
+    zoom: 0.3;
+    border: 6px solid #fa683f;
+}
+
+.length-icon line{
+    stroke: #fa683f;
+    stroke-width: 6px;
+}
+
+.delete-icon{
+    zoom: 0.3;
+}
+
+.delete-icon *{
+    fill: none;
+    stroke: #fa683f;
+    stroke-width: 6px;
+    stroke-linecap: "round";
+}
+
+.area-icon{
+    zoom: 0.3;
+    border: 6px solid #fa683f;
+}
+
+.area-icon *{
+    stroke: #fa683f;
+    stroke-width: 6px;
 }

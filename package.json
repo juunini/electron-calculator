@@ -1,17 +1,19 @@
 {
-  "name": "Calculater",
+  "name": "Calculator",
   "version": "1.0.0",
-  "description": "Calculater",
+  "description": "Calculator",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
   "keywords": [
-    "Calculater"
+    "Calculator"
   ],
   "author": "juunini",
   "devDependencies": {
-    "electron": "~1.7.8"
+    "electron": "~1.7.8",
+    "electron-winstaller": "^2.6.3",
+    "jquery": "^3.2.1"
   },
   "dependencies": {
     "jquery": "^3.2.1"

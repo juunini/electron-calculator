@@ -2,47 +2,109 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8">
-    <title>Calculater</title>
+    <title>Calculator</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/module.js" charset="utf-8"></script>
+    <script src="./js/main.js" charset="utf-8"></script>
 </head>
 <body>
-    <div class="screenArea">
-    <textarea name="screen" maxlength="100" readonly></textarea>
-    <input type="text" name="result" readonly>
-    <button type="button" name="functions">func＊</button>
-    <button type="button" name="delete">
-        <svg width="120px" height="60px">
-            <polygon points="6 30, 30 6, 114 6, 114 54, 30 54" />
-            <line x1="60" y1="20" x2="80" y2="40" />
-            <line x1="80" y1="20" x2="60" y2="40" />
-        </svg>
-    </button>
+    <div class="wrap">
+        <div class="screenArea">
+            <textarea name="screen" maxlength="100" readonly></textarea>
+            <input type="text" name="result" readonly>
+            <button type="button" name="unit">
+                <svg width="132px" height="54px" class="length-icon">
+                    <line x1="60" y1="0" x2="60" y2="25" />
+
+                    <line x1="16" y1="0" x2="16" y2="15" />
+                    <line x1="38" y1="0" x2="38" y2="15" />
+
+                    <line x1="82" y1="0" x2="82" y2="15" />
+                    <line x1="104" y1="0" x2="104" y2="15" />
+                </svg>
+            </button>
+            <button type="button" name="delete">
+                <svg width="120px" height="60px" class="delete-icon">
+                    <polygon points="6 30, 30 6, 114 6, 114 54, 30 54" />
+                    <line x1="60" y1="20" x2="80" y2="40" />
+                    <line x1="80" y1="20" x2="60" y2="40" />
+                </svg>
+            </button>
+        </div>
+        <div class="buttonArea">
+            <button type="button" name="clean">Clean</button>
+            <button type="button" name="parentheses">()</button>
+            <button type="button" name="percent">%</button>
+            <button type="button" name="division">÷</button>
+            <button type="button" name="seven">7</button>
+            <button type="button" name="eight">8</button>
+            <button type="button" name="nine">9</button>
+            <button type="button" name="multiplication">×</button>
+            <button type="button" name="four">4</button>
+            <button type="button" name="five">5</button>
+            <button type="button" name="six">6</button>
+            <button type="button" name="minus">-</button>
+            <button type="button" name="one">1</button>
+            <button type="button" name="two">2</button>
+            <button type="button" name="three">3</button>
+            <button type="button" name="plus">+</button>
+            <button type="button" name="plus_minus">＋/－</button>
+            <button type="button" name="zero">0</button>
+            <button type="button" name="dot">.</button>
+            <button type="button" name="equal">=</button>
+        </div>
     </div>
-    <div class="buttonArea">
-        <button type="button" name="clean">Clean</button>
-        <button type="button" name="parentheses">()</button>
-        <button type="button" name="percent">%</button>
-        <button type="button" name="division">÷</button>
-        <button type="button" name="seven">7</button>
-        <button type="button" name="eight">8</button>
-        <button type="button" name="nine">9</button>
-        <button type="button" name="multiplication">×</button>
-        <button type="button" name="four">4</button>
-        <button type="button" name="five">5</button>
-        <button type="button" name="six">6</button>
-        <button type="button" name="minus">-</button>
-        <button type="button" name="one">1</button>
-        <button type="button" name="two">2</button>
-        <button type="button" name="three">3</button>
-        <button type="button" name="plus">+</button>
-        <button type="button" name="plus_minus">＋/－</button>
-        <button type="button" name="zero">0</button>
-        <button type="button" name="dot">.</button>
-        <button type="button" name="equal">=</button>
+
+    <div class="unit">
+        <div>
+            <button type="button" name="area">
+                <svg width="60px" height="60px" class="area-icon">
+                    <line x1="10" y1="50" x2="10" y2="30" />
+                    <line x1="10" y1="50" x2="30" y2="50" />
+                    <line x1="10" y1="50" x2="25" y2="35" />
+
+                    <line x1="50" y1="10" x2="50" y2="30" />
+                    <line x1="50" y1="10" x2="30" y2="10" />
+                    <line x1="50" y1="10" x2="35" y2="25" />
+                </svg>
+            </button>
+        </div>
+        <div>
+            <button type="button" name="length">
+                <svg width="132px" height="54px" class="length-icon">
+                    <line x1="60" y1="0" x2="60" y2="25" />
+            
+                    <line x1="16" y1="0" x2="16" y2="15" />
+                    <line x1="38" y1="0" x2="38" y2="15" />
+            
+                    <line x1="82" y1="0" x2="82" y2="15" />
+                    <line x1="104" y1="0" x2="104" y2="15" />
+                </svg>
+            </button>
+        </div>
+        <div>
+            <button type="button" name="temperature">
+                <svg></svg>
+            </button>
+        </div>
+        <div>
+            <button type="button" name="volume">
+                <svg></svg>
+            </button>
+        </div>
+        <div>
+            <button type="button" name="weight">
+                <svg></svg>
+            </button>
+        </div>
+        <div>
+            <button type="button" name="data">
+                <svg></svg>
+            </button>
+        </div>
     </div>
 
 </body>
