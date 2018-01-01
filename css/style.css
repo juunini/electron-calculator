@@ -57,11 +57,15 @@ body{
 }
 
 .screenArea button[name = 'unit']{
+    margin-right: 10px;
+}
+
+.screenArea button[name = 'unit'], .screenArea button[name = 'mode']{
     background: none;
     border: none;
 }
 
-.screenArea button[name = 'delete']:focus, .screenArea button[name = 'unit']:focus{
+.screenArea button[name = 'delete']:focus, .screenArea button[name = 'unit']:focus, .screenArea button[name = 'mode']:focus{
     border: none;
     outline: none;
 }
@@ -123,16 +127,32 @@ button[name='zero'], button[name='one'], button[name='two'], button[name='three'
     zoom: 0.3;
     border: 6px solid #fa683f;
 }
-
 .length-icon line{
     stroke: #fa683f;
     stroke-width: 6px;
 }
 
+.mode-icon{
+    zoom: 0.3;
+    border: 6px solid #747a81;
+}
+.mode-icon line{
+    stroke: #747a81;
+    stroke-width: 6px;
+}
+.mode-icon .dotted-line{
+    stroke-dasharray: 3, 5;
+}
+.mode-icon.on{
+    border: 6px solid #fa683f;
+}
+.mode-icon.on line{
+    stroke: #fa683f;
+}
+
 .delete-icon{
     zoom: 0.3;
 }
-
 .delete-icon *{
     fill: none;
     stroke: #fa683f;
@@ -144,7 +164,6 @@ button[name='zero'], button[name='one'], button[name='two'], button[name='three'
     zoom: 0.3;
     border: 6px solid #fa683f;
 }
-
 .area-icon *{
     stroke: #fa683f;
     stroke-width: 6px;
